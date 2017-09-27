@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.usuario.sendmessage.SendMessageActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txvViewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usuario"
+                />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="@dimen/edtWidth"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_de_usuario"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/separation">
+
+            <TextView
+                android:id="@+id/txvViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje"
+                />
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/contenido_del_mensaje"
+                android:singleLine="false" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/separation">
+
+            <Button
+                android:id="@+id/btnOK1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:layout_weight="1"
+                android:onClick="getOnClick"
+                />
+
+            <Button
+                android:id="@+id/btnOK2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
