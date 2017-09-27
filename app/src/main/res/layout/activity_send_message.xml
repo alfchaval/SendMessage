@@ -29,6 +29,8 @@
                 android:layout_width="@dimen/edtWidth"
                 android:layout_height="wrap_content"
                 android:hint="@string/nombre_de_usuario"
+                android:maxLines="1"
+                android:maxLength="30"
                 />
 
         </TableRow>
@@ -47,10 +49,11 @@
 
             <EditText
                 android:id="@+id/edtMessage"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/edtWidth"
                 android:layout_height="wrap_content"
                 android:hint="@string/contenido_del_mensaje"
-                android:singleLine="false" />
+                android:maxLines="10"
+                android:maxLength="300"/>
 
         </TableRow>
 

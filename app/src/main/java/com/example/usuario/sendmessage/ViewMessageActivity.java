@@ -21,8 +21,8 @@ public class ViewMessageActivity extends AppCompatActivity {
     }
 
     private void EscribirMensaje() {
-        Intent intent = getIntent();
-        txvViewUser.setText("El usuario " + intent.getExtras().getString("strUser").trim() + " te ha mandado el siguiente mensaje");
-        txvViewMessage.setText(intent.getExtras().getString("strMessage").trim());
+        Bundle bundle = getIntent().getExtras();
+        txvViewUser.setText("El usuario " + bundle.getString("strUser").trim() + " te ha mandado el siguiente mensaje");
+        txvViewMessage.setText(bundle.getString("strMessage").trim());
     }
 }

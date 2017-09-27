@@ -24,7 +24,7 @@ public class SendMessageActivity extends AppCompatActivity {
         edtUser = (EditText) findViewById(R.id.edtUser);
         edtMessage = (EditText) findViewById(R.id.edtMessage);
         btnOK1 = (Button)findViewById(R.id.btnOK1);
-        btnOK2 = (Button)findViewById(R.id.btnOK1);
+        btnOK2 = (Button)findViewById(R.id.btnOK2);
 
         btnOK2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +47,7 @@ public class SendMessageActivity extends AppCompatActivity {
         bundle.putString("strUser", edtUser.getText().toString());
         bundle.putString("strMessage", edtMessage.getText().toString());
         Intent intent = new Intent(SendMessageActivity.this, ViewMessageActivity.class);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 }
