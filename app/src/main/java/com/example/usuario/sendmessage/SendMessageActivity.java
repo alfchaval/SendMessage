@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * Esta clase envía un mensaje a otra.
+ * @author Alfonso Chamorro Valle
+ */
+
 public class SendMessageActivity extends AppCompatActivity {
 
     private EditText edtUser, edtMessage;

@@ -1,9 +1,13 @@
 package com.example.usuario.sendmessage;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+/**
+ * Esta clase recibe un mensaje y lo muestra en pantalla.
+ * @author Alfonso Chamorro Valle
+ */
 
 public class ViewMessageActivity extends AppCompatActivity {
 
@@ -21,8 +25,7 @@ public class ViewMessageActivity extends AppCompatActivity {
     }
 
     private void EscribirMensaje() {
-        Bundle bundle = getIntent().getExtras();
-        txvViewUser.setText("El usuario " + bundle.getString("strUser").trim() + " te ha mandado el siguiente mensaje");
-        txvViewMessage.setText(bundle.getString("strMessage").trim());
+        txvViewUser.setText(String.format(getResources().getString(R.string.el_usuario_te_ha_mandado_el_siguiente_mensaje), getIntent().getExtras().getString("strUser").trim()));
+        txvViewMessage.setText(getIntent().getExtras().getString("strMessage").trim());
     }
 }

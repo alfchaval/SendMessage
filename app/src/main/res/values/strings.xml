@@ -3,7 +3,7 @@
     <string name="usuario">Usuario</string>
     <string name="mensaje">Mensaje</string>
     <string name="ok">OK</string>
-    <string name="el_usuario_te_manda_el_siguiente_mensaje">El usuario te manda el siguiente mensaje:</string>
+    <string name="el_usuario_te_ha_mandado_el_siguiente_mensaje">El usuario %1$s te ha mandado el siguiente mensaje:</string>
     <string name="nombre_de_usuario">Nombre de Usuario</string>
     <string name="contenido_del_mensaje">Contenido del mensaje</string>
 </resources>
