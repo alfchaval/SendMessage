@@ -67,7 +67,7 @@
                 android:id="@+id/btnOK1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ok"
+                android:text="@string/ok1"
                 android:layout_weight="1"
                 android:onClick="getOnClick"
                 />
@@ -76,7 +76,7 @@
                 android:id="@+id/btnOK2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ok"
+                android:text="@string/ok2"
                 android:layout_weight="1"
                 />
         </LinearLayout>
